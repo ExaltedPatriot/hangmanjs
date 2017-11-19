@@ -1,0 +1,39 @@
+<!doctype html>
+<head>
+  <title>Hangman JS Game</title>
+  <link rel="stylesheet" href="styles.css">
+
+
+<body>
+<div class=main>
+  <h1>Hangman</h1>
+  </br>
+  </br>
+  <h3>Welcome! We are going to play hangman!</h3>
+
+  <table>
+    <tr>
+      <td><p id="wordLengthParagraph"></p></td>
+      <td rowspan="4"><img src="imgs/hms1.png" id="hangmanPicture"></td>
+    </tr>
+    <tr>
+      <td><p id="wordCompletionStateParagraph"></p></tr>
+    </tr>
+    <tr>
+      <td><p id="gameStateParagraph"></p></tr>
+    </tr>
+    <tr>
+      <td><p id="lettersGuessedParagraph"></p></tr>
+    </tr>
+  </table>
+
+
+
+  <input type="text" placeholder="Your guess" id="userGuessBox" onkeypress="keyPressed(event)"></input>
+  </br></br>
+  <input type="button" value="Submit Guess" id="userGuessButton" onclick="processGuess()"></input>
+  </br></br>
+  <div id="restartDiv"></div>
+</div>
+<script type="text/javascript" src="hangman.js"></script>
+</body>
